@@ -61,10 +61,6 @@
                 {% if page.header.share is not defined or page.header.share != false %}{% include 'partials/social-share.html.twig' %}{% endif %}
               </footer>
             </div><!-- /.entry-content -->
-            {% if page.header.comments is not defined or page.header.comments != false %}
-                <section id="disqus_thread"></section>
-                {% include 'partials/disqus-comments.html.twig' %}
-            {% endif %}
             {% include 'partials/read-more.html.twig' %}
           </article>
 	{% endblock %}
